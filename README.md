@@ -1,45 +1,70 @@
-# Sistema de Contabilidade para Universidade
+# Sistema de Contabilidade - Faculdade Esuda
 
-Este é um sistema de contabilidade desenvolvido para substituir um sistema antigo em uma universidade. Ele permite gerenciar alunos, funcionários, despesas e gerar relatórios financeiros.
-
----
+Este projeto é um sistema de contabilidade desenvolvido para a Faculdade Esuda. Ele permite o gerenciamento de alunos, funcionários e despesas, além de fornecer gráficos e relatórios para análise financeira.
 
 ## Funcionalidades
 
-1. **Cadastro de Alunos**:
-   - Nome, curso, mensalidade e situação (adimplente ou inadimplente).
+- **Cadastro de Alunos:**
+  - Nome, curso e mensalidade.
+  - Situação (Adimplente/Inadimplente).
 
-2. **Cadastro de Funcionários**:
-   - Nome, cargo e salário.
+- **Cadastro de Funcionários:**
+  - Nome, cargo e salário.
 
-3. **Registro de Despesas**:
-   - Descrição e valor da despesa.
+- **Registro de Despesas:**
+  - Descrição e valor.
 
-4. **Relatórios**:
-   - Total de receitas (mensalidades dos alunos).
-   - Total de despesas.
-   - Saldo atual (receitas - despesas).
-   - Lista de alunos inadimplentes.
+- **Gráficos:**
+  - Visualização de receitas (mensalidades) e despesas.
 
-5. **Dashboard com Gráficos**:
-   - Gráfico de receitas x despesas.
+- **Relatórios:**
+  - Total de receitas, despesas e saldo atual.
+  - Lista de alunos inadimplentes.
 
-6. **Exportação de Dados**:
-   - Exportar lista de alunos para CSV.
+- **Exportação de Dados:**
+  - Exportar dados dos alunos para CSV.
 
-7. **Responsividade**:
-   - Layout adaptável para desktop, tablet e telefone.
+- **Apagar Registros:**
+  - Botão para apagar todos os registros de alunos, funcionários e despesas.
 
----
+## Tecnologias Utilizadas
+
+- **Frontend:**
+  - HTML5
+  - CSS3 (com responsividade para diferentes tamanhos de tela)
+  - JavaScript (Vanilla JS)
+  - Chart.js (para gráficos)
+
+- **Armazenamento:**
+  - LocalStorage (para persistência de dados no navegador)
 
 ## Como Usar
 
-### Pré-requisitos
-- Navegador moderno (Chrome, Firefox, Edge, etc.).
-- VS Code ou qualquer editor de texto.
+1. **Login:**
+   - Acesse a página de login (`index.html`).
+   - Use as credenciais:
+     - E-mail: `admin@universidade.com`
+     - Senha: `123456`
 
-### Passos para Executar
+2. **Dashboard:**
+   - Após o login, você será redirecionado para a página principal (`dashboard.html`).
+   - Navegue pelas seções para cadastrar alunos, funcionários e despesas.
+   - Visualize gráficos e gere relatórios.
 
-1. **Clone o repositório**:
-   ```bash
-   git clone https://github.com/seu-usuario/sistema-contabilidade-universidade.git
+3. **Exportar Dados:**
+   - Clique no botão "Exportar para CSV" para baixar os dados dos alunos em formato CSV.
+
+4. **Apagar Registros:**
+   - Clique no botão "Apagar Todos os Registros" para remover todos os dados cadastrados.
+
+## Responsividade
+
+O sistema foi desenvolvido para ser totalmente responsivo, funcionando bem em:
+
+- Smartphones pequenos (a partir de 300px).
+- Smartphones maiores (400px - 767px).
+- Tablets (768px - 1023px).
+- Notebooks e telas médias (1024px - 1440px).
+- Telas grandes (acima de 1440px).
+
+## Estrutura do Projeto
