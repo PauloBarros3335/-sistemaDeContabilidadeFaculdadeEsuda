@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Sistema de Contabilidade Faculdade Esuda</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dashboard</h1>
+
+      <!-- Seção de Gráficos -->
+      <section>
+        <h2>Gráficos</h2>
+        <canvas id="graficoReceitasDespesas"></canvas>
+      </section>
+
+      <!-- Seção de Cadastro de Alunos -->
+      <section>
+        <h2>Cadastrar Aluno</h2>
+        <form id="formAluno">
+          <input
+            type="text"
+            id="nomeAluno"
+            placeholder="Nome do Aluno"
+            required
+          />
+          <input type="text" id="cursoAluno" placeholder="Curso" required />
+          <input
+            type="number"
+            id="mensalidadeAluno"
+            placeholder="Mensalidade"
+            required
+          />
+          <button type="submit">Cadastrar Aluno</button>
+        </form>
+      </section>
+
+      <!-- Seção de Cadastro de Funcionários -->
+      <section>
+        <h2>Cadastrar Funcionário</h2>
+        <form id="formFuncionario">
+          <input
+            type="text"
+            id="nomeFuncionario"
+            placeholder="Nome do Funcionário"
+            required
+          />
+          <input
+            type="text"
+            id="cargoFuncionario"
+            placeholder="Cargo"
+            required
+          />
+          <input
+            type="number"
+            id="salarioFuncionario"
+            placeholder="Salário"
+            required
+          />
+          <button type="submit">Cadastrar Funcionário</button>
+        </form>
+      </section>
+
+      <!-- Seção de Registrar Despesas -->
+      <section>
+        <h2>Registrar Despesa</h2>
+        <form id="formDespesa">
+          <input
+            type="text"
+            id="descricaoDespesa"
+            placeholder="Descrição da Despesa"
+            required
+          />
+          <input type="number" id="valorDespesa" placeholder="Valor" required />
+          <button type="submit">Registrar Despesa</button>
+        </form>
+      </section>
+
+      <!-- Seção de Relatórios -->
+      <section>
+        <h2>Relatórios</h2>
+        <button id="gerarRelatorio">Gerar Relatório</button>
+        <button id="exportarCSV">Exportar para CSV</button>
+        <div id="relatorio"></div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
