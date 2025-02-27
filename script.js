@@ -151,6 +151,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Função para apagar todos os registros
+  const botaoApagarRegistros = document.getElementById("apagarRegistros");
+  if (botaoApagarRegistros) {
+    botaoApagarRegistros.addEventListener("click", function () {
+      if (
+        confirm(
+          "Tem certeza que deseja apagar todos os registros? Esta ação não pode ser desfeita."
+        )
+      ) {
+        alunos = [];
+        funcionarios = [];
+        despesas = [];
+        localStorage.removeItem("alunos");
+        localStorage.removeItem("funcionarios");
+        localStorage.removeItem("despesas");
+        alert("Todos os registros foram apagados com sucesso!");
+        atualizarGrafico(); // Atualiza o gráfico para refletir a remoção dos dados
+        document.getElementById("relatorio").innerHTML = ""; // Limpa o relatório exibido
+      }
+    });
+  }
+
   // Função para atualizar o gráfico
   function atualizarGrafico() {
     const ctx = document

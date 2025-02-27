@@ -71,6 +71,15 @@ button:active {
   transform: translateY(0);
 }
 
+#apagarRegistros {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  margin-top: 10px;
+}
+
+#apagarRegistros:hover {
+  background: linear-gradient(135deg, #c0392b, #e74c3c);
+}
+
 #relatorio {
   margin-top: 30px;
   padding: 20px;
@@ -104,7 +113,7 @@ button:active {
   font-size: 14px;
 }
 
-/* Responsividade */
+/* Responsividade para telas menores que 767px */
 @media (max-width: 767px) {
   .container {
     width: 95%;
@@ -125,5 +134,47 @@ button:active {
 
   button {
     padding: 10px;
+  }
+}
+
+/* Responsividade para telas menores que 400px */
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #relatorio h3 {
+    font-size: 18px;
+  }
+
+  #relatorio p {
+    font-size: 14px;
+  }
+
+  #relatorio ul li {
+    font-size: 12px;
+    padding: 8px;
   }
 }
